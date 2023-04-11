@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "key-forge": {
+      "hosting": {
+        "key-forge": [
+          "key-forge"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "key-forge"
+  }
+}
