@@ -1,5 +1,5 @@
 .active {
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 a {
@@ -8,6 +8,10 @@ a {
     font-family: Akira;
     padding-left: 2vh;
     font-size: 2vh;
+}
+
+a:hover {
+    color: yellow;
 }
 
 div {
