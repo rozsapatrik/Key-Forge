@@ -1,12 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+export class NewItemModule {
+  id : string;
+  description: string;
+  image: string;
+  name: string;
+  price: number;
 
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class NewItemModule { }
+  constructor(NewItemModule: NewItemModule)
+  {
+    this.id = NewItemModule.id;
+    this.description = NewItemModule.description;
+    this.image = NewItemModule.image;
+    this.name = NewItemModule.name;
+    this.price = NewItemModule.price;
+  }
+}

@@ -1,12 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NewItemModule } from "./new-item.module";
 
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class CartModule { }
+export class Cart {
+  email: string = "";
+  address: string = "";
+  name: string = "";
+  phone: string = "";
+  items: Array<NewItemModule> = [];
+}
