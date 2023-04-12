@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    //this.cartserv.ngOnInit();
+    this.cartserv.ngOnInit();
   }
 
   ngOnChanges(): void {
