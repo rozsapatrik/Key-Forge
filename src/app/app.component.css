@@ -7,3 +7,9 @@
 mat-sidenav {
     width: 250px;
 }
+
+.keyforgetitle {
+    font-family: Akira;
+    font-size: 5.5vh;
+    font-style: italic;
+}

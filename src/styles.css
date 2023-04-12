@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Akira;
+    src: url(./assets/Akira\ Expanded\ Demo.otf);
+}
+
 input.ng-touched.ng-invalid {
     border-color: red;
 }
@@ -8,8 +13,14 @@ div.validation-error {
     font-size: 80%;
     color: red;
 }
-html, body { height: 100%; }
-body { color: white; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+    height: 100%;
+}
+body {
+    color: white;
+    margin: 0;
+    font-family: Roboto,"Helvetica Neue", sans-serif;
+ }
 
 .spinnerDiv {
     display: flex;
