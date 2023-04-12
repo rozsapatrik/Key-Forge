@@ -17,7 +17,6 @@ export class AdminGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     
     this.isReallyAdmin = JSON.parse(localStorage.getItem("admin") as string);
-    // alert(this.isReallyAdmin);
     if (this.isReallyAdmin === "true") {
       return true;
     }

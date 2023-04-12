@@ -42,7 +42,6 @@ export class UserService {
               name: doc.get("name"),
               phone: doc.get("phone")
             };
-            console.log("THIS IIIIISSSSSS!");
             console.log(this.userData)
             localStorage.setItem("cartUser", JSON.stringify(this.userData));
           }

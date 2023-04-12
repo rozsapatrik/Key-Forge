@@ -37,6 +37,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ToastrModule } from 'ngx-toastr';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSelectModule,
     MatOptionModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    [HotToastModule.forRoot()]
   ],
   providers: [],
   bootstrap: [AppComponent]
