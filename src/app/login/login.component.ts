@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { User } from '../shared/user.module';
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
+  @Output() loggedUserOutput?: User;
 }
