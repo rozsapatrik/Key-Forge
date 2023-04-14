@@ -13,3 +13,7 @@ mat-sidenav {
     font-size: 5.5vh;
     font-style: italic;
 }
+
+.titletext {
+    font-family: Akira;
+}
