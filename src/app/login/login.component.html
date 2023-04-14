@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="formDiv">
+    <h1 class="display-4">Login</h1>
+    <form #form="ngForm" autocomplete="off" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <input type="hidden" name="id">
+    
+        <mat-form-field class="form-group"><mat-label>Email:</mat-label>
+            <input type="text" matInput name="email" class="form-control" required formControlName="email">
+        </mat-form-field>
+    
+        <mat-form-field class="form-group"><mat-label>Password:</mat-label>
+            <input type="password" matInput name="password" class="form-control" required formControlName="password">
+        </mat-form-field>
+    
+        <div class="form-group">
+            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Login</button>
+        </div>
+    </form>
+</div>
