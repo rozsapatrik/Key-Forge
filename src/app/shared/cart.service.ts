@@ -12,7 +12,7 @@ export class CartService implements OnInit {
     email: "",
     address: "",
     phone: "",
-    items: []
+    cart: []
   };
   constructor(private firestore: AngularFirestore) { }
 
@@ -20,18 +20,25 @@ export class CartService implements OnInit {
   }
 
   order(data: Cart) {
-    return new Promise<any>((resolve, reject) => {
-      this.firestore
-          .collection("orders")
-          .add(data)
-          .then(res => {resolve(res)}, err => reject(err));
-    });
+    if(typeof data.cart !== 'undefined' && data.cart.length > 0)
+    {
+      return new Promise<any>((resolve, reject) => {
+        this.firestore
+            .collection("orders")
+            .add(data)
+            .then(res => {resolve(res)}, err => reject(err));
+      });
+    }
+    else
+    {
+      return 0;
+    }
   }
 
   addToCart(item: NewItemModule) {
     console.log(JSON.stringify(this.cartData));
-    this.cartData.items.push(item);
-    localStorage.setItem("cart", JSON.stringify(this.cartData.items));
+      this.cartData.cart?.push(item);
+      localStorage.setItem("cart", JSON.stringify(this.cartData.cart));
   }
 
   getCart() {
