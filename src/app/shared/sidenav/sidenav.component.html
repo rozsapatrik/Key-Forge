@@ -9,5 +9,5 @@
     <mat-divider></mat-divider>
     <a (click)="close()" mat-list-item routerLink="/admin"><mat-icon>build</mat-icon>Admin</a>
     <mat-divider></mat-divider>
-    <a (click)="close()" mat-list-item><mat-icon>logout</mat-icon>Logout</a>
+    <a (click)="close()" mat-list-item (click)="snlogout()"><mat-icon>logout</mat-icon>Logout</a>
   </mat-nav-list>
