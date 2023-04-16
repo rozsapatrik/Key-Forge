@@ -7,7 +7,7 @@ tr:hover {
 }
 
 table {
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0.5em 1em;
     width: 100%;
     margin: 0;
@@ -17,7 +17,17 @@ table {
     text-align: end;
 }
 
+img {
+    border-radius: 50px;
+}
 
+td, th {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 3vh;
+}
 
 form {
     width: 100%;
