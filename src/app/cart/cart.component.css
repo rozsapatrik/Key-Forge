@@ -25,6 +25,10 @@ td, th {
     text-align: center;
 }
 
+th {
+    font-family: Akira;
+}
+
 h2 {
     padding-bottom: 3vh;
 }
