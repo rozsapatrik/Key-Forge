@@ -14,13 +14,13 @@
 <div class="cardsDiv">
     <mat-card *ngFor="let i of lista" >
         <mat-card-header>
-            <mat-card-title>{{i.name}}</mat-card-title>
+            <mat-card-title><p>{{i.name}}</p></mat-card-title>
         </mat-card-header>
 
         <mat-card-content>
             <img src="{{i.image}}">
-            <p>{{i.price}} $</p>
-            <p>{{i.description}}</p>
+            <p class="price">{{i.price}} $</p>
+            <p class="description">{{i.description}}</p>
         </mat-card-content>
 
         <mat-card-actions>

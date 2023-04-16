@@ -23,8 +23,28 @@ mat-card * {
     white-space: pre-line;
 }
 
+mat-card-title {
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .cardsDiv {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+img {
+    border-radius: 1%;
+}
+
+.price {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 1.5vh;
+    font-family: Akira;
+}
+
+h1 {
+    font-family: Akira;
 }

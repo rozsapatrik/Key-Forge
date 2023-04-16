@@ -7,9 +7,27 @@ tr:hover {
 }
 
 table {
-    border-collapse: separate;
-    border-spacing: 0.5em 1em;
+    border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
     margin: 0;
     overflow: scroll;
+    border-radius: 10px;
+}
+
+th {
+    text-align: center;
+    font-family: Akira;
+}
+
+td {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.tdname {
+    font-weight: bold;
 }
