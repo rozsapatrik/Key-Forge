@@ -8,7 +8,7 @@ import { NewItemService } from '../../shared/new-item.service';
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.css']
 })
-export class ItemListComponent {
+export class ItemListComponent implements OnInit {
   loading: boolean = false;
 
   constructor(private service: NewItemService) { }
